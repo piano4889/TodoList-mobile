@@ -1,0 +1,514 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeferiPoint-SpecialItalicA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialItalicA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+}
+
+/* 모달창 */
+.modal {
+    z-index: 999;
+    width: 375px;
+    height: 812px;
+    margin: 150px auto 0;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 8px 8px 15px #2b2a288e;
+    overflow: hidden;
+}
+
+.m_header i {
+    color: #34a853;
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+.blur1 {
+    width: 100%;
+    height: 400px;
+    background-color: #ffffffb2;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+}
+
+.blur2 {
+    width: 100%;
+    height: 350px;
+    background-color: #ffffffb2;
+    position: absolute;
+    z-index: 9999;
+    bottom: 0;
+}
+
+.m_content {
+    background-color: #4285f5;
+    margin-top: 160px;
+}
+
+.m_year {
+    color: #6ac582;
+    font-family: 'GmarketSansMedium';
+    font-weight: 700;
+    font-size: 35px;
+    width: 90px;
+    margin-left: 55px;
+    float: left;
+}
+
+.m_year li {
+    line-height: 1.6;
+    text-align: center;
+}
+
+.m_month {
+    float: left;
+    color: #34a853;
+    font-family: 'GmarketSansMedium';
+    font-weight: 700;
+    font-size: 35px;
+    width: 90px;
+    margin-left: 10px;
+}
+
+.m_month li {
+    line-height: 1.6;
+    text-align: center;
+}
+
+.m_day {
+    float: left;
+    color: #222;
+    font-family: 'GmarketSansMedium';
+    font-weight: 700;
+    font-size: 35px;
+    width: 90px;
+}
+
+.m_day li {
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* 모달창 끝 */
+
+.TodoTemplate {
+    width: 375px;
+    height: 812px;
+    position: relative;
+    background-color: #111;
+    box-shadow: 8px 8px 15px #2b2a288e;
+    overflow: hidden;
+}
+
+.Status_bar {
+    width: 375px;
+    height: 44px;
+    float: left;
+}
+
+.header {
+    padding: 0 25px;
+}
+
+.header ul li {
+    float: left;
+}
+
+.header ul li i {
+    color: #fff;
+    font-size: 25px;
+}
+
+.header ul li:nth-child(2) {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 25px;
+    font-family: 'SUITE-Regular';
+}
+
+.calender {
+    padding: 0 25px;
+}
+
+.calender > .august h1 {
+    clear: both;
+    color: #34a853;
+    font-weight: 500;
+    font-size: 30px;
+    padding-top: 55px;
+    padding-bottom: 35px;
+    font-family: 'GmarketSansMedium';
+}
+
+.calender > .august > .day {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calender > .august > .day > li {
+    float: left;
+    font-size: 13px;
+    font-family: 'GmarketSansMedium';
+    width: 35px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.calender > .august > .week1 {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.calender > .august > .week1 > li {
+    float: left;
+    font-size: 17px;
+    font-family: 'GmarketSansMedium';
+    width: 45px;
+    text-align: center;
+}
+
+.calender > .august > .week1 > li span {
+    color: #333;
+}
+
+.calender > .august > .week2 {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.calender > .august > .week2 > li {
+    float: left;
+    font-size: 17px;
+    font-family: 'GmarketSansMedium';
+    width: 45px;
+    text-align: center;
+}
+
+.calender > .august > .week3 {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.calender > .august > .week3 > li {
+    float: left;
+    font-size: 17px;
+    font-family: 'GmarketSansMedium';
+    width: 45px;
+    text-align: center;
+}
+
+.calender > .august > .week4 {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.calender > .august > .week4 > li {
+    float: left;
+    font-size: 17px;
+    font-family: 'GmarketSansMedium';
+    width: 45px;
+    text-align: center;
+}
+
+.calender > .august > .week5 {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.calender > .august > .week5 > li {
+    float: left;
+    font-size: 17px;
+    font-family: 'GmarketSansMedium';
+    width: 45px;
+    text-align: center;
+}
+
+.today {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    position: absolute;
+    top: 505px;
+    left: 499px;
+    background-color: #34a853;
+}
+
+/* september  */
+
+.calender > .september h1 {
+    clear: both;
+    color: #34a853;
+    font-weight: 500;
+    font-size: 30px;
+    padding-top: 75px;
+    padding-bottom: 35px;
+    font-family: 'GmarketSansMedium';
+}
+
+.calender > .september > .day {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calender > .september > .day > li {
+    float: left;
+    font-size: 13px;
+    font-family: 'GmarketSansMedium';
+    width: 35px;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.calender > .september > .week1 {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.calender > .september > .week1 > li {
+    float: left;
+    font-size: 17px;
+    font-family: 'GmarketSansMedium';
+    width: 45px;
+    text-align: center;
+}
+
+.calender > .september > .week1 > li span {
+    color: #333;
+}
+
+.calender > .september > .week2 {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.calender > .september > .week2 > li {
+    float: left;
+    font-size: 17px;
+    font-family: 'GmarketSansMedium';
+    width: 45px;
+    text-align: center;
+}
+
+.calender > .september > .week3 {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.calender > .september > .week3 > li {
+    float: left;
+    font-size: 17px;
+    font-family: 'GmarketSansMedium';
+    width: 45px;
+    text-align: center;
+}
+
+.calender > .september > .week4 {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.calender > .september > .week4 > li {
+    float: left;
+    font-size: 17px;
+    font-family: 'GmarketSansMedium';
+    width: 45px;
+    text-align: center;
+}
+
+.calender > .september > .week5 {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.calender > .september > .week5 > li {
+    float: left;
+    font-size: 17px;
+    font-family: 'GmarketSansMedium';
+    width: 45px;
+    text-align: center;
+}
+
+.content {
+    display:none;
+    z-index: 999;
+    position: absolute;
+    background-color: #fff;
+    width: 375px;
+    top: 460px;
+    padding: 0 25px;
+    border-radius: 50px 50px 0 0;
+    box-sizing: border-box;
+}
+
+.content > i {
+    font-size: 35px;
+    color: #505050;
+    margin: 5px 147px 20px;
+}
+
+.content h1 {
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'LeferiPoint-SpecialItalicA';
+    margin-bottom: 10px;
+    color: 222;
+}
+
+.TodoAdd {
+    display: flex;
+    padding: 12px 0 20px
+}
+
+.TodoAdd input {
+    flex: 1 1;
+    line-height: 1.5;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    color: #333;
+    font-size: 17px;
+    background-color: #fff;
+    font-family: 'GmarketSansMedium';
+}
+
+.TodoAdd input::-webkit-input-placeholder {
+    font-weight: 300
+}
+
+.TodoAdd input:-ms-input-placeholder {
+    font-weight: 300
+}
+
+.TodoAdd input::-ms-input-placeholder {
+    font-weight: 300
+}
+
+.TodoAdd input::placeholder {
+    font-weight: 300
+}
+
+.TodoAdd button {
+    display: flex;
+    padding-right: 0;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer
+}
+
+.TodoAdd button i {
+    color: #34a853;
+    font-size: 23px
+}
+
+.TodoObject {
+    display: flex;
+    align-items: center;
+    padding: 13px 0;
+    border-bottom: 1px solid #eee;
+    color: #333
+}
+
+.TodoObject.star {
+    order: -1
+}
+
+.TodoObject .checkbox {
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    cursor: pointer
+}
+
+.TodoObject .checkbox i {
+    font-size: 18px
+}
+
+.TodoObject .checkbox .text {
+    flex: 1 1;
+    margin-left: 12px;
+    font-family: 'GmarketSansMedium';
+    font-weight: 500;
+}
+
+.TodoObject .checkbox.checked {
+    color: #4285f5;
+    font: var(--fa-font-solid);
+}
+
+.TodoObject .checkbox.checked .text {
+    color: #888;
+    text-decoration: line-through
+}
+
+.TodoObject .important {
+    display: flex;
+    color: #ccc;
+    font-size: 17px;
+    cursor: pointer
+}
+
+.TodoObject .important.star, .TodoObject .important:hover {
+    color: #f0f351
+}
+
+.TodoObject .remove {
+    display: flex;
+    margin-left: 5px;
+    color: hsla(0, 100%, 71%, .79);
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.TodoObject .remove:hover {
+    color: #ff6b6b
+}
+
+.TodoList {
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    overflow-y: auto
+}
+

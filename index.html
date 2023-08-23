@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동환&서연 todolist</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/98abdcd9b2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--    <div class="modal">-->
+<!--        <div class="Status_bar">&lt;!&ndash;아이폰 상단에 시간 배터리등등 나오는 부분&ndash;&gt;-->
+<!--        </div>-->
+<!--        <div class="m_header">-->
+<!--            <i class="fa-solid fa-bars"></i>-->
+<!--        </div>&lt;!&ndash; m_header 끝 &ndash;&gt;-->
+
+<!--        <div class="blur1"></div>-->
+<!--        <div class="blur2"></div>-->
+<!--        <div class="m_content">-->
+<!--            <ul class="m_year">-->
+<!--                <li>2017</li>-->
+<!--                <li>2018</li>-->
+<!--                <li>2019</li>-->
+<!--                <li>2020</li>-->
+<!--                <li>2021</li>-->
+<!--                <li>2022</li>-->
+<!--                <li>2023</li>-->
+<!--            </ul>-->
+
+<!--            <ul class="m_month">-->
+<!--                <li>Jan</li>-->
+<!--                <li>Feb</li>-->
+<!--                <li>Mar</li>-->
+<!--                <li>Apr</li>-->
+<!--                <li>May</li>-->
+<!--                <li>Jun</li>-->
+<!--                <li>Jul</li>-->
+<!--            </ul>-->
+
+<!--            <ul class="m_day">-->
+<!--                <li>17</li>-->
+<!--                <li>18</li>-->
+<!--                <li>19</li>-->
+<!--                <li>20</li>-->
+<!--                <li>21</li>-->
+<!--                <li>22</li>-->
+<!--                <li>23</li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+    <!-- 모달 창 끝 -->
+
+
+    <div class="TodoTemplate">
+        <div class="Status_bar"><!--아이폰 상단에 시간 배터리등등 나오는 부분-->
+        </div>
+        <div class="header">
+            <ul>
+                <li><i class="fa-solid fa-bars"></i></li>
+                <li class="year">2023</li>
+            </ul>
+        </div><!-- header 끝 -->
+
+            <div class="calender">
+            <div class="august">
+                <h1>August</h1>
+                <ul class="day">
+                 <li>SUN</li>
+                 <li>MON</li>
+                 <li>TUE</li>
+                 <li>WED</li>
+                 <li>THU</li>
+                 <li>FRI</li>
+                 <li>SAT</li>
+                </ul>
+
+                <ul class="week1">
+                </ul>
+
+                <ul class="week2">
+                </ul>
+
+                <ul class="week3">
+                </ul>
+
+                <ul class="week4">
+                </ul>
+
+                <ul class="week5">
+                </ul>
+
+                <div class="today"></div>
+             </div>
+             <!-- august 끝 -->
+
+<!--             <div class="september">-->
+<!--                <h1>September</h1>-->
+<!--                <ul class="day">-->
+<!--                 <li>SUN</li>-->
+<!--                 <li>MON</li>-->
+<!--                 <li>TUE</li>-->
+<!--                 <li>WED</li>-->
+<!--                 <li>THU</li>-->
+<!--                 <li>FRI</li>-->
+<!--                 <li>SAT</li>-->
+<!--                </ul>-->
+
+<!--                <ul class="week1">-->
+<!--                    <li><span>27</span></li>-->
+<!--                    <li><span>28</span></li>-->
+<!--                    <li><span>29</span></li>-->
+<!--                    <li><span>30</span></li>-->
+<!--                    <li><span>31</span></li>-->
+<!--                    <li>01</li>-->
+<!--                    <li>02</li>-->
+<!--                </ul>-->
+
+<!--                <ul class="week2">-->
+<!--                    <li>03</li>-->
+<!--                    <li>04</li>-->
+<!--                    <li>05</li>-->
+<!--                    <li>06</li>-->
+<!--                    <li>07</li>-->
+<!--                    <li>08</li>-->
+<!--                    <li>09</li>-->
+<!--                </ul>-->
+
+<!--                <ul class="week3">-->
+<!--                    <li>10</li>-->
+<!--                    <li>11</li>-->
+<!--                    <li>12</li>-->
+<!--                    <li>13</li>-->
+<!--                    <li>14</li>-->
+<!--                    <li>15</li>-->
+<!--                    <li>16</li>-->
+<!--                </ul>-->
+
+<!--                <ul class="week4">-->
+<!--                    <li>17</li>-->
+<!--                    <li>18</li>-->
+<!--                    <li>19</li>-->
+<!--                    <li>20</li>-->
+<!--                    <li>21</li>-->
+<!--                    <li>22</li>-->
+<!--                    <li>23</li>-->
+<!--                </ul>-->
+
+<!--                <ul class="week5">-->
+<!--                    <li>24</li>-->
+<!--                    <li>25</li>-->
+<!--                    <li>26</li>-->
+<!--                    <li>27</li>-->
+<!--                    <li>28</li>-->
+<!--                    <li>29</li>-->
+<!--                    <li>30</li>-->
+<!--                </ul>-->
+
+<!--                <div class="today"></div>-->
+<!--             </div>-->
+             <!-- september 끝 -->
+            </div><!-- Calendar 끝 -->
+
+            <div class="content">
+                <i class="fa-solid fa-minus"></i>
+               <h1>TODO LIST</h1>
+                <form class="TodoAdd">
+                    <input placeholder="추가할 할 일을 입력하세요" value>
+                    <button type="submit">
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </button>
+                </form>
+                <div class="TodoList">
+                    <div class="TodoObject star">
+                        <div class="checkbox checked">
+                            <i class="fa-solid fa-square-check"></i>
+                            <div class="text">리액트 공부하기</div>
+                        </div><!--checkbox checked 끝-->
+                        <div class="important star">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="remove">
+                            <i class="fa-solid fa-circle-minus"></i>
+                        </div>
+                    </div><!--TodoObject star 끝-->
+
+                    <div class="TodoObject">
+                        <div class="checkbox checked">
+                        <i class="fa-solid fa-square-check"></i>
+                        <div class="text">도서관가서 책 빌리기</div>
+                        </div>
+                        <div class="important">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="remove">
+                            <i class="fa-solid fa-circle-minus"></i>
+                        </div>
+                    </div><!--TodoObject 끝-->
+
+                    <div class="TodoObject">
+                        <div class="checkbox">
+                            <i class="fa-regular fa-square"></i>
+                            <div class="text">방 정리하기</div>
+                        </div>
+                        <div class="important">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="remove">
+                            <i class="fa-solid fa-circle-minus"></i>
+                        </div>
+                    </div><!--TodoObject 끝-->
+            </div>
+        </div><!--content 끝-->
+
+    </div><!-- TodoTemplate 끝 -->
+<script src="./script/script.js"></script>
+</body>
+</html>
