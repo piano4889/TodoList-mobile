@@ -116,7 +116,7 @@ html, body {
     position: relative;
     background-color: #111;
     box-shadow: 8px 8px 15px #2b2a288e;
-    overflow: hidden;
+    overflow-x: scroll;
 }
 
 .Status_bar {
@@ -145,11 +145,24 @@ html, body {
     font-family: 'SUITE-Regular';
 }
 
+ul[class^="week"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    margin: 1rem 0 ;
+}
+
+ul[class^="week"] li {
+    padding: 0.5rem;
+    margin: 0;
+}
+
 .calender {
     padding: 0 25px;
 }
 
-.calender > .august h1 {
+.calender > .month h1 {
     clear: both;
     color: #34a853;
     font-weight: 500;
@@ -159,13 +172,14 @@ html, body {
     font-family: 'GmarketSansMedium';
 }
 
-.calender > .august > .day {
+.calender > .month > .day {
     color: #fff;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.calender > .august > .day > li {
+.calender > .month > .day > li {
     float: left;
     font-size: 13px;
     font-family: 'GmarketSansMedium';
@@ -174,14 +188,13 @@ html, body {
     padding: 0 5px;
 }
 
-.calender > .august > .week1 {
+.calender > .month > .week1 {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
 }
 
-.calender > .august > .week1 > li {
+.calender > .month > .week1 > li {
     float: left;
     font-size: 17px;
     font-family: 'GmarketSansMedium';
@@ -189,18 +202,17 @@ html, body {
     text-align: center;
 }
 
-.calender > .august > .week1 > li span {
+.calender > .month > .week1 > li span {
     color: #333;
 }
 
-.calender > .august > .week2 {
+.calender > .month > .week2 {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
 }
 
-.calender > .august > .week2 > li {
+.calender > .month > .week2 > li {
     float: left;
     font-size: 17px;
     font-family: 'GmarketSansMedium';
@@ -208,14 +220,13 @@ html, body {
     text-align: center;
 }
 
-.calender > .august > .week3 {
+.calender > .month > .week3 {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
 }
 
-.calender > .august > .week3 > li {
+.calender > .month > .week3 > li {
     float: left;
     font-size: 17px;
     font-family: 'GmarketSansMedium';
@@ -223,14 +234,13 @@ html, body {
     text-align: center;
 }
 
-.calender > .august > .week4 {
+.calender > .month > .week4 {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
 }
 
-.calender > .august > .week4 > li {
+.calender > .month > .week4 > li {
     float: left;
     font-size: 17px;
     font-family: 'GmarketSansMedium';
@@ -238,14 +248,13 @@ html, body {
     text-align: center;
 }
 
-.calender > .august > .week5 {
+.calender > .month > .week5 {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
 }
 
-.calender > .august > .week5 > li {
+.calender > .month > .week5 > li {
     float: left;
     font-size: 17px;
     font-family: 'GmarketSansMedium';
@@ -254,123 +263,13 @@ html, body {
 }
 
 .today {
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    position: absolute;
-    top: 505px;
-    left: 499px;
+    border-radius: 30%;
     background-color: #34a853;
 }
 
-/* september  */
-
-.calender > .september h1 {
-    clear: both;
-    color: #34a853;
-    font-weight: 500;
-    font-size: 30px;
-    padding-top: 75px;
-    padding-bottom: 35px;
-    font-family: 'GmarketSansMedium';
-}
-
-.calender > .september > .day {
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-}
-
-.calender > .september > .day > li {
-    float: left;
-    font-size: 13px;
-    font-family: 'GmarketSansMedium';
-    width: 35px;
-    text-align: center;
-    padding: 0 5px;
-}
-
-.calender > .september > .week1 {
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-.calender > .september > .week1 > li {
-    float: left;
-    font-size: 17px;
-    font-family: 'GmarketSansMedium';
-    width: 45px;
-    text-align: center;
-}
-
-.calender > .september > .week1 > li span {
-    color: #333;
-}
-
-.calender > .september > .week2 {
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-.calender > .september > .week2 > li {
-    float: left;
-    font-size: 17px;
-    font-family: 'GmarketSansMedium';
-    width: 45px;
-    text-align: center;
-}
-
-.calender > .september > .week3 {
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-.calender > .september > .week3 > li {
-    float: left;
-    font-size: 17px;
-    font-family: 'GmarketSansMedium';
-    width: 45px;
-    text-align: center;
-}
-
-.calender > .september > .week4 {
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-.calender > .september > .week4 > li {
-    float: left;
-    font-size: 17px;
-    font-family: 'GmarketSansMedium';
-    width: 45px;
-    text-align: center;
-}
-
-.calender > .september > .week5 {
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-.calender > .september > .week5 > li {
-    float: left;
-    font-size: 17px;
-    font-family: 'GmarketSansMedium';
-    width: 45px;
-    text-align: center;
-}
 
 .content {
-    display:none;
+    display: none;
     z-index: 999;
     position: absolute;
     background-color: #fff;
@@ -392,7 +291,7 @@ html, body {
     font-weight: 900;
     font-family: 'LeferiPoint-SpecialItalicA';
     margin-bottom: 10px;
-    color: 222;
+    color: #222;
 }
 
 .TodoAdd {
@@ -512,3 +411,14 @@ html, body {
     overflow-y: auto
 }
 
+.btn {
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    height: 10px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 5rem;
+}
