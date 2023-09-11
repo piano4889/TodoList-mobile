@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>동환&서연 todolist</title>
+    <title>Todolist</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/98abdcd9b2.js" crossorigin="anonymous"></script>
@@ -64,7 +64,6 @@
     </div><!-- header 끝 -->
 
     <div class="calender slider-container">
-        <!--TODO 동적으로 월 생성하기-->
         <div class="month current__month">
             <h1></h1>
             <ul class="day">
@@ -85,7 +84,7 @@
         <!-- august 끝 -->
     </div><!-- Calendar 끝 -->
     <div class="content">
-        <i class="fa-solid fa-minus"></i>
+        <i class="modal__toggle__btn fa-solid fa-minus"></i>
         <h1>TODO LIST</h1>
         <form class="TodoAdd">
             <input placeholder="추가할 할 일을 입력하세요" value>
@@ -134,7 +133,9 @@
             </div><!--TodoObject 끝-->
         </div>
     </div><!--content 끝-->
-    <i class="btn fa-solid fa-minus"></i>
+    <div class="ModalBtn">
+        <i class="fa-solid fa-minus"></i>
+    </div>
 </div><!-- TodoTemplate 끝 -->
 <script src="./script/script.js"></script>
 </body>

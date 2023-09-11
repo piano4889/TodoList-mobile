@@ -43,6 +43,16 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 
+document.querySelector('.ModalBtn').addEventListener('click', () => {
+	const modal = document.querySelector('.content');
+	modal.classList.add('opened');
+	console.log("모달 오픈");
+});
+
+document.querySelector('.modal__toggle__btn').addEventListener('click', () => {
+	const modal = document.querySelector('.content');
+	modal.classList.remove('opened');
+});
 
 function generateCalendar(year, month) {
 	// 현재 날짜 정보 가져오기
@@ -96,6 +106,8 @@ function generateCalendar(year, month) {
 		createWeek(week, index);
 	});
 }
+
+//localStorage todo list 추가
 
 
 
