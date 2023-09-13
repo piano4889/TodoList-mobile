@@ -1,6 +1,12 @@
 # TodoList-mobile
 순수 HTML, JavaScript를 이용한 Calender 기반 TodoList
 
+## 목표
+JavaScript DOM 컨트롤, drag 이벤트 등 기본기 복습
+
+## 개발 기간
+2023.09.11 ~ 
+
 # 구현해야할 기능
 
 * Page가 렌더링 될 때, 오늘 날짜를 기준으로 해당 월 달력 출력
